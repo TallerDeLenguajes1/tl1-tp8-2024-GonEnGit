@@ -58,7 +58,7 @@ while (continuar == 'Y')
     Console.WriteLine("Ingrese una Opcion: ");
     Console.WriteLine("1. Completar una tarea.");
     Console.WriteLine("2. Buscar una tarea por palabra.");
-    Console.WriteLine("3. Mostrar tareas completadas.");
+    Console.WriteLine("3. Mostrar todas las tareas.");
     do
     {
         ingreso = Console.ReadLine();
@@ -87,6 +87,8 @@ while (continuar == 'Y')
             {
                 if (tarea.Tareaid == idABuscar)
                 {
+                    // si tenes que usar un auxiliar copiar y borrar
+                    // pero una vez que borras usa un break para no romper todo
                     Tarea entradaCompletada = new Tarea();
                     entradaCompletada = tarea;
                     listaCompletadas.Add(entradaCompletada);
@@ -95,10 +97,23 @@ while (continuar == 'Y')
 
             break;
         case '2':
+            Console.WriteLine("Ingrese una palabra a buscar entre las descripciones: ");
+            ingreso = Console.ReadLine();
+
+            // acá tendrias que poner un compare
 
             break;
         case '3':
-
+            Console.WriteLine("\n/------ Tareas Pendientes ------/\n");
+            foreach (var tarea in listaPendientes)
+            {
+                Console.WriteLine(tarea.MostrarDatos());
+            }
+            Console.WriteLine("\n/------ Tareas Completadas ------/\n");
+            foreach (var tarea in listaCompletadas)
+            {
+                Console.WriteLine(tarea.MostrarDatos());
+            }
             break;
     }
 
