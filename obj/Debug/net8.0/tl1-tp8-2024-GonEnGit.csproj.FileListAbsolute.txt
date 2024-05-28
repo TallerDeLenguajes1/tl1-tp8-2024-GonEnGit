@@ -12,3 +12,4 @@ C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\r
 C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.pdb
 C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.genruntimeconfig.cache
 C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\ref\tl1-tp8-2024-GonEnGit.dll
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.sourcelink.json
