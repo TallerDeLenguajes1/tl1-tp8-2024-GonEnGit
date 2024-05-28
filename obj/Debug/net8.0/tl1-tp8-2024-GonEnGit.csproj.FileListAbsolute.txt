@@ -1,0 +1,14 @@
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\bin\Debug\net8.0\tl1-tp8-2024-GonEnGit.exe
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\bin\Debug\net8.0\tl1-tp8-2024-GonEnGit.deps.json
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\bin\Debug\net8.0\tl1-tp8-2024-GonEnGit.runtimeconfig.json
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\bin\Debug\net8.0\tl1-tp8-2024-GonEnGit.dll
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\bin\Debug\net8.0\tl1-tp8-2024-GonEnGit.pdb
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.dll
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\refint\tl1-tp8-2024-GonEnGit.dll
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.pdb
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\tl1-tp8-2024-GonEnGit.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\MartinezGonzalo\tl1-tp8-2024-GonEnGit\obj\Debug\net8.0\ref\tl1-tp8-2024-GonEnGit.dll
