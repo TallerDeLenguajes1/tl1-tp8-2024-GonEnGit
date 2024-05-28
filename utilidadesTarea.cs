@@ -5,12 +5,11 @@ class Tarea
 // esta bien declarar así los campos
     int tareaid;
     int duracion;
-    string descripcion;
+    string descripcion = "";
 
 // pero las propiedades, que son el getter + setter ya que estamos
 // son las que usas para guardar valores en los campos, no usas
-// metodos para hacer eso
-    // esto esta bien:
+// metodos para hacer eso; esto esta bien:
     public int Tareaid { get => tareaid; set => tareaid = value; }
     public int Duracion { get => duracion; set => duracion = value; }
     public string Descripcion { get => descripcion; set => descripcion = value; }
