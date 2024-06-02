@@ -1,19 +1,22 @@
-﻿using utilidadesTarea;
+﻿using Microsoft.VisualBasic.FileIO;
+using utilidadesTarea;
 
-Random random = new Random();       // esta es la forma de implementa un nuevo objeto random
-int randNum = random.Next(10) + 1;  // y usas .Next para generar un numero hasta valor - 1
+Random random = new Random();       // esta es la forma de implementar un nuevo objeto random
+int randNum = random.Next(10) + 5;  // y usas .Next para generar un numero hasta valor - 1
 
-// el +1 que pusiste es solo para evitar que 
+// el +5 que pusiste es solo para evitar que 
 // te caiga en 0 tareas, hay alguna manera mejor?
 
 int maxId;
 int idABuscar;
 int opcion;
 int indiceDesc;
-char continuar = 'Y';
+int tareasEncontradas = 0;
+char continuar = 'S';
 string ingreso;
 string[] arregloDescripciones = {"Una descripcion", "Otra descripcion", "mas descripciones", "una mas", "otra for good measure"};
 bool prueba;
+bool palabraEncontrada;
 
 // en C# las listas ya son una 'variable'... gracias a Dios...
 // solo declaras una instancia de lista y la usas... no te comas estos ()
@@ -38,7 +41,7 @@ for (int i = 0; i < randNum; i++)
         }
     }
     entrada.Tareaid = maxId + 1;
-    entrada.Duracion = random.Next(10);
+    entrada.Duracion = random.Next(10) + 1;
     indiceDesc = random.Next(5);
     entrada.Descripcion = arregloDescripciones[indiceDesc];
 
@@ -53,9 +56,9 @@ foreach(var tareaPendiente in listaPendientes)
 }
 Console.WriteLine("\n");
 
-while (continuar == 'Y')
+while (continuar == 'S')
 {
-    Console.WriteLine("Ingrese una Opcion: ");
+    Console.WriteLine("\nIngrese una Opcion: ");
     Console.WriteLine("1. Completar una tarea.");
     Console.WriteLine("2. Buscar una tarea por palabra.");
     Console.WriteLine("3. Mostrar todas las tareas.");
@@ -71,7 +74,7 @@ while (continuar == 'Y')
 
     switch (opcion)
     {
-        case '1':
+        case 1:
             Console.WriteLine("Ingrese el id de la tarea.");
             do
             {
@@ -85,25 +88,61 @@ while (continuar == 'Y')
 
             foreach (var tarea in listaPendientes)
             {
-                if (tarea.Tareaid == idABuscar)
+                if (tarea != null && tarea.Tareaid == idABuscar)
                 {
                     // si tenes que usar un auxiliar copiar y borrar
+                    // o eso te dijeron los profes y el ayudante
+                    // pero lo que encontras en internet y lo que indica vscode
+                    // apunta que no hace falta, vos hacelo así por las dudas
                     // pero una vez que borras usa un break para no romper todo
                     Tarea entradaCompletada = new Tarea();
                     entradaCompletada = tarea;
                     listaCompletadas.Add(entradaCompletada);
+                    listaPendientes.Remove(tarea);
+                    break;
                 }
             }
 
             break;
-        case '2':
+        case 2:
             Console.WriteLine("Ingrese una palabra a buscar entre las descripciones: ");
             ingreso = Console.ReadLine();
 
-            // acá tendrias que poner un compare
+            Console.WriteLine("\n/------ Tareas Pendientes ------/\n");
+            foreach (var tarea in listaPendientes)
+            {
+                palabraEncontrada = tarea.Descripcion.Contains(ingreso);
+                if (palabraEncontrada)
+                {
+                    tareasEncontradas++;
+                    Console.WriteLine(tarea.MostrarDatos());
+                }
+            }
+            if (tareasEncontradas == 0)
+            {
+                Console.WriteLine($"No hay tareas que contendgan {ingreso} en la lista de Pendientes.");
+            }
+            tareasEncontradas = 0;
+
+            Console.WriteLine("\n/------ Tareas Completadas ------/\n");
+            foreach (var tarea in listaCompletadas)
+            {
+                palabraEncontrada = tarea.Descripcion.Contains(ingreso);
+                if (palabraEncontrada)
+                {
+                    tareasEncontradas++;
+                    Console.WriteLine(tarea.MostrarDatos());
+                }
+            }
+            if (tareasEncontradas == 0)
+            {
+                Console.WriteLine($"No hay tareas que contendgan {ingreso} en la lista de Completadas.");
+            }
+            tareasEncontradas = 0;
 
             break;
-        case '3':
+
+        case 3:
             Console.WriteLine("\n/------ Tareas Pendientes ------/\n");
             foreach (var tarea in listaPendientes)
             {
@@ -118,6 +157,17 @@ while (continuar == 'Y')
     }
 
 
-// falta el bucle para continuar
-
+    Console.WriteLine("Continuar con otra operacion? (S/N)");
+    do
+    {
+        ingreso = Console.ReadLine();
+        prueba = char.TryParse(ingreso, out continuar);
+        continuar = Char.ToUpper(continuar);
+        if (prueba == false || (continuar.Equals('S') == false && continuar.Equals('N') == false) )
+        {
+            Console.WriteLine("No es una opcion valida.");
+        }
+    } while (prueba == false || (continuar.Equals('S') == false && continuar.Equals('N') == false) );
 }
+
+Console.Write("Hasta la proxima!");

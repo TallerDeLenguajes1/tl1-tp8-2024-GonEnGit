@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // cambia TODA la direccion por la del .dll que se genera
+            "program": "C:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\bin\\Debug\\net8.0\\tl1-tp8-2024-GonEnGit.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
