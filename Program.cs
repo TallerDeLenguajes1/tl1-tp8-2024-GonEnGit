@@ -170,4 +170,12 @@ while (continuar == 'S')
     } while (prueba == false || (continuar.Equals('S') == false && continuar.Equals('N') == false) );
 }
 
+// segun parece C# tiene un metodo mas conveniente para liberar memoria
+// el metodo .Clear() libera todos los nodos de una lista de una
+// y si pones la lista en null, el garbage collector puede liberar tambien la lista
+listaPendientes.Clear();
+listaCompletadas.Clear();
+listaPendientes = null;
+listaCompletadas = null;
+
 Console.Write("Hasta la proxima!");
