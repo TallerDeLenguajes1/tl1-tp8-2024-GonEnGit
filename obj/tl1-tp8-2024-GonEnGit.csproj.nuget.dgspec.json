@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\tl1-tp8-2024-GonEnGit.csproj": {}
+    "C:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\tl1-tp8-2024-GonEnGit.csproj": {}
   },
   "projects": {
-    "c:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\tl1-tp8-2024-GonEnGit.csproj": {
+    "C:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\tl1-tp8-2024-GonEnGit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\tl1-tp8-2024-GonEnGit.csproj",
+        "projectUniqueName": "C:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\tl1-tp8-2024-GonEnGit.csproj",
         "projectName": "tl1-tp8-2024-GonEnGit",
-        "projectPath": "c:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\tl1-tp8-2024-GonEnGit.csproj",
+        "projectPath": "C:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\tl1-tp8-2024-GonEnGit.csproj",
         "packagesPath": "C:\\Users\\g\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\obj\\",
+        "outputPath": "C:\\Users\\g\\Desktop\\paraHacerTaller\\tl1-tp8-2024-GonEnGit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\g\\AppData\\Roaming\\NuGet\\NuGet.Config"
